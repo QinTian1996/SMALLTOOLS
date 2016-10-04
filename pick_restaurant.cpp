@@ -33,6 +33,10 @@ void pick_res (vector<string> l){
     int index = distribution(generator);
     cout<< l[index-1] << endl;
 }
+//Add a new restaurant to the reslist.
+void add_res (){
+
+}
 int main(int argc, char const *argv[]) {
     vector<string> a;
     readfile(a, "reslist");
@@ -48,6 +52,6 @@ int main(int argc, char const *argv[]) {
         }
     }
     cout << "Yes, my lord." << endl;
-    usleep(1000000);
+    usleep(500000);
     return 0;
 }
