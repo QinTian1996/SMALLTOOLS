@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#Copy this to /usr/local/bin, type "chmod u+x /usr/local/bin/+1s"
+#then type command +1s in terminal to use
+declare  -a YULU=(
+"垂死病中惊坐起，谈笑风生又一年"
+"我是身经百战，见得多了"
+"无可奉告 O_O"
+"你问我资瓷不资瓷，我说资瓷"
+"美国的华莱士不知道比你们不知道高到哪里去了，我和他谈笑风生"
+"你们啊还是要学习一个"
+"你们啊，too young, too simple！ sometimes naïve！"
+"我今天是作为一个长者来跟你们讲， 有必要告诉你们一些人生的经验"
+"闷声发大财, 这是坠吼的"
+"如果将来宣传报道有偏差，你们是要负责哒"
+"你们啊，不要想喜欢弄个大新闻，说现在已经钦定了，就把我批判一番"
+"I am angry!"
+"一个人的命运当然要靠自我奋斗，但是也要考虑历史的行程"
+"我实在我也不是谦虚，我一个上海市委书记怎么到北京来了呢？"
+"我就念了两首诗，叫“苟利国家生死以，岂因祸福避趋之”"
+"很惭愧，就做了一点微小的工作，谢谢大家"
+"你们给我搞的这个东西，excited！"
+"还是要提高自己的姿势水平"
+)
+
+rand=$(($RANDOM % 18))
+
+echo "${YULU[rand]}"
+#printf  "\r${YULU[rand]}%$((${COLUMNS:-$(tput cols)} - ${#YULU[rand]}))s" ' '
